@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+actor "Administrator" as fc
+rectangle Manage_schedules_sprint_2 {
+
+  usecase "CRUD schedule" as UC7
+
+}
+
+fc --- UC7
+
+@enduml

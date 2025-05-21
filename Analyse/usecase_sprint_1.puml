@@ -11,10 +11,10 @@ rectangle Manage_schedules_sprint_1 {
 }
 
 fc --- UC1
-UC1 <-. UC3 : includes
-UC1 <-. UC4 : includes
-UC1 <-. UC5 : includes
-UC1 <-. UC6 : includes
+UC1 <-. UC3 : <<extends>>
+UC1 <-. UC4 : <<extends>>
+UC1 <-. UC5 : <<extends>>
+UC1 <-. UC6 : <<extends>>
 
 
 @enduml
