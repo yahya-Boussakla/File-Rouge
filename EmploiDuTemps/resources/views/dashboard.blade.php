@@ -7,9 +7,9 @@
 
     <div class="py-12">
 
-        <div class="max-w-[100rem] mx-auto sm:px-6 lg:px-8 flex flex-row justify-between">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
-            {{-- <div class="grid gap-2 mb-8 md:grid-cols-2 xl:grid-cols-4">
+            <div class="grid gap-2 mb-8 md:grid-cols-2 xl:grid-cols-4">
                     <div class="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800">
                         <div class="p-4 flex items-center">
                             <div
@@ -88,93 +88,10 @@
                             </div>
                         </div>
                     </div>
-            </div> --}}
-
-            <!-- component -->
-
-
-            <!-- Start Card -->
-            <!-- Card Photos -->
-            <div class="bg-gradient-to-b from-blue-800 to-blue-900 rounded-xl shadow-lg w-80">
-                <div class="flex justify-center">
-                    <div class="flex justify-center p-4 bg-blue-700 ring-2 ring-blue-600 rounded-lg shadow-xl w-32">
-                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 14l9-5-9-5-9 5 9 5z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 14l6.16-3.422A12.083 12.083 0 0112 20.5a12.083 12.083 0 01-6.16-9.922L12 14z" />
-                </svg>
-                    </div>
-                </div>
-                <div class="p-4">
-                    <p class="text-white font-semibold">Photos</p>
-                    <div class="flex justify-between mt-2">
-                        <p class="text-gray-300">20,100 Files</p>
-                        <p class="text-white">6.5GB</p>
-                    </div>
-                </div>
             </div>
 
-            <!-- Card Music -->
-            <div class="bg-gradient-to-b from-yellow-700 to-yellow-800 rounded-xl shadow-lg w-80">
-                <div class="flex justify-center">
-                    <div class="flex justify-center p-4 bg-yellow-600 ring-2 ring-yellow-500 rounded-lg shadow-xl w-32">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 12c0-1.333-.667-2-2-2s-2 .667-2 2v4c0 1.333.667 2 2 2s2-.667 2-2v-4zM12 12c0-1.333.667-2 2-2s2 .667 2 2v4c0 1.333-.667 2-2 2s-2-.667-2-2v-4z" />
-                </svg>
-                    </div>
-                </div>
-                <div class="p-4">
-                    <p class="text-white font-semibold">Music</p>
-                    <div class="flex justify-between mt-2">
-                        <p class="text-gray-300">200 Files</p>
-                        <p class="text-white">650 MB</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Card Videos -->
-            <div class="bg-gradient-to-b from-pink-800 to-pink-900 rounded-xl shadow-lg w-80">
-                <div class="flex justify-center">
-                    <div class="flex justify-center p-4 bg-pink-700 ring-2 ring-pink-600 rounded-lg shadow-xl w-32">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 10l9-7 9 7v8a2 2 0 01-2 2h-4a2 2 0 01-2-2V12H9v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-8z" />
-                </svg>
-                    </div>
-                </div>
-                <div class="p-4">
-                    <p class="text-white font-semibold">Modules</p>
-                    <div class="flex justify-between mt-2">
-                        <p class="text-gray-300">150 Files</p>
-                        <p class="text-white">750 MB</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Card Documents -->
-            <div class="bg-gradient-to-b from-indigo-800 to-indigo-900 rounded-xl shadow-lg w-80">
-                <div class="flex justify-center">
-                    <div class="flex justify-center p-4 bg-indigo-700 ring-2 ring-indigo-600 rounded-lg shadow-xl w-32">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 20h5v-2a4 4 0 00-5-4m-4-1a4 4 0 11-8 0 4 4 0 018 0zm6 4v-2a4 4 0 00-3-3.87M6 20H1v-2a4 4 0 015-4" />
-                </svg>
-                    </div>
-                </div>
-                <div class="p-4">
-                    <p class="text-white font-semibold">Documents</p>
-                    <div class="flex justify-between mt-2">
-                        <p class="text-gray-300">200 Files</p>
-                        <p class="text-white">20 MB</p>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </div>

@@ -13,21 +13,21 @@ class Lesson extends Model
 
     public function schedule()
     {
-        return $this->belongsTo(Schedule::class, 'schedule_id', 'schedule_id');
+        return $this->belongsTo(Schedule::class);
     }
 
     public function module()
     {
-        return $this->belongsTo(Module::class, 'module_id', 'module_id');
+        return $this->belongsTo(Module::class);
     }
 
     public function room()
     {
-        return $this->belongsTo(Room::class, 'room_id', 'room_id');
+        return $this->belongsTo(Room::class);
     }
 
     public function user()
     {
-        return $this->belongsTo(User::class, 'user_id', 'user_id');
+        return $this->belongsTo(User::class);
     }
 }
