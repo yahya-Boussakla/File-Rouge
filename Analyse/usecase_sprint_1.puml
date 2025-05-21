@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+actor "Administrator" as fc
+rectangle Manage_schedules_sprint_1 {
+  usecase "View Statistics" as UC1
+  usecase "Average Session Duration by Module" as UC3
+  usecase "Total Sessions per Group" as UC4
+  usecase "Room Occupancy Rate" as UC5
+  usecase "Sessions by Weekday" as UC6
+
+}
+
+fc --- UC1
+UC1 <-. UC3 : includes
+UC1 <-. UC4 : includes
+UC1 <-. UC5 : includes
+UC1 <-. UC6 : includes
+
+
+@enduml

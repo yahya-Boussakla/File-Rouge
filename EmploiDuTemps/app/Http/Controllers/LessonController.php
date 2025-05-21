@@ -12,7 +12,8 @@ class LessonController extends Controller
      */
     public function index()
     {
-        //
+        $lessons = Lesson::all();
+        return view('components.app-layout');
     }
 
     /**

@@ -3,19 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Models\Groupe;
-use App\Models\Schedule;
+use App\Models\Lesson;
+use App\Models\Module;
+use App\Models\Room;
 use Illuminate\Http\Request;
 
-class GroupeController extends Controller
+class DashboardController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-
         $groupes = Groupe::all();
-        return view('welcome',compact('groupes'));
+        $lessons = Lesson::all();
+        $modules = Module::all();
+        $rooms = Room::all();
+        return view('dashboard',compact('groupes','lessons','modules','rooms'));
     }
 
     /**
@@ -37,7 +38,7 @@ class GroupeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Groupe $groupe)
+    public function show(string $id)
     {
         //
     }
@@ -45,7 +46,7 @@ class GroupeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Groupe $groupe)
+    public function edit(string $id)
     {
         //
     }
@@ -53,7 +54,7 @@ class GroupeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Groupe $groupe)
+    public function update(Request $request, string $id)
     {
         //
     }
@@ -61,7 +62,7 @@ class GroupeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Groupe $groupe)
+    public function destroy(string $id)
     {
         //
     }
