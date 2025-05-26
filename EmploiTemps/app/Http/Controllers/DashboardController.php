@@ -10,13 +10,14 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function index()
+    public function index($id = 1)
     {
+        $groupe = Groupe::find($id);
         $groupes = Groupe::all();
         $lessons = Lesson::all();
         $modules = Module::all();
         $rooms = Room::all();
-        return view('dashboard',compact('groupes','lessons','modules','rooms'));
+        return view('admin.dashboard',compact('groupes','lessons','modules','rooms','groupe'));
     }
 
     /**

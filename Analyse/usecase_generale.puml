@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+actor "Respopnsable de formation" as fc
+actor "Formateur" as us
+rectangle Systeme {
+  usecase "Gerer les emplois" as UC1
+  usecase "Consulter statistiques" as UC2
+  usecase "Voire les emplois" as UC3
+}
+fc --> UC1
+fc --> UC2
+us --> UC3
+@enduml

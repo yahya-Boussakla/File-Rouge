@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('schedules', function (Blueprint $table) {
-            $table->id('schedule_id');
-            $table->foreignId('groupe_id')->constrained('groupes', 'groupe_id')->onDelete('cascade');
+            $table->id('id');
+            $table->foreignId('groupe_id')->constrained('groupes', 'id')->onDelete('cascade');
             $table->date('start_date');
             $table->date('end_date');
             $table->string('description');

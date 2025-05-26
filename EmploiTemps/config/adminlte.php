@@ -63,12 +63,12 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => '<b>Plan</b>LMS',
+    'logo_img' => 'vendor/adminlte/dist/img/PLAN.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'Admin Logo',
+    'logo_img_alt' => 'Admin test',
 
     /*
     |--------------------------------------------------------------------------
@@ -309,7 +309,7 @@ return [
             'type' => 'fullscreen-widget',
             'topnav_right' => true,
         ],
-
+        
         // Sidebar items:
         [
             'type' => 'sidebar-menu-search',
@@ -320,78 +320,92 @@ return [
             'url' => 'admin/blog',
             'can' => 'manage-blog',
         ],
-        [
-            'text' => 'pages',
-            'url' => 'admin/pages',
-            'icon' => 'far fa-fw fa-file',
-            'label' => 4,
-            'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
+        // [
+        //     'text' => 'pages',
+        //     'url' => 'admin/pages',
+        //     'icon' => 'far fa-fw fa-file',
+        //     'label' => 4,
+        //     'label_color' => 'success',
+        // ],
+        // ['header' => 'account_settings'],
+        // [
+        //     'type' => 'user-panel',
+        //     'image' => 'vendor/adminlte/dist/img/user2-160x160.jpg',
+        //     'text' => 'Alexander Pierce',
+        //     'url'  => '#',
+        // ],
         [
             'text' => 'profile',
             'url' => 'admin/settings',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text' => 'change_password',
+            'text' => 'changer mot de pass',
             'url' => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text' => 'multilevel',
+            'text' => 'Emplois du temps',
+            'url' => 'admin/settings',
             'icon' => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
-            ],
         ],
-        ['header' => 'labels'],
+
         [
-            'text' => 'important',
-            'icon_color' => 'red',
-            'url' => '#',
+            'text' => 'séances',
+            'icon' => 'fas fa-fw fa-share',
+            'url' => 'admin/settings',
+
+            // 'submenu' => [
+            //     [
+            //         'text' => 'level_one',
+            //         'url' => '#',
+            //     ],
+            //     [
+            //         'text' => 'level_one',
+            //         'url' => '#',
+            //         'submenu' => [
+            //             [
+            //                 'text' => 'level_two',
+            //                 'url' => '#',
+            //             ],
+            //             [
+            //                 'text' => 'level_two',
+            //                 'url' => '#',
+            //                 'submenu' => [
+            //                     [
+            //                         'text' => 'level_three',
+            //                         'url' => '#',
+            //                     ],
+            //                     [
+            //                         'text' => 'level_three',
+            //                         'url' => '#',
+            //                     ],
+            //                 ],
+            //             ],
+            //         ],
+            //     ],
+            //     [
+            //         'text' => 'level_one',
+            //         'url' => '#',
+            //     ],
+            // ],
         ],
-        [
-            'text' => 'warning',
-            'icon_color' => 'yellow',
-            'url' => '#',
-        ],
-        [
-            'text' => 'information',
-            'icon_color' => 'cyan',
-            'url' => '#',
-        ],
+        // ['header' => 'labels'],
+        // [
+        //     'text' => 'important',
+        //     'icon_color' => 'red',
+        //     'url' => '#',
+        // ],
+        // [
+        //     'text' => 'warning',
+        //     'icon_color' => 'yellow',
+        //     'url' => '#',
+        // ],
+        // [
+        //     'text' => 'information',
+        //     'icon_color' => 'cyan',
+        //     'url' => '#',
+        // ],
     ],
 
     /*

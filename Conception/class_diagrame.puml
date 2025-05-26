@@ -1,0 +1,64 @@
+@startuml
+
+class Group {
+  -group_id: int
+  -group_name: string
+  -created_at: timestamp
+  -updated_at: timestamp
+}
+
+class Schedule {
+  -schedule_id: int
+  -group_id: int
+  -start_date: date
+  -end_date: date
+  -description: string
+  -created_at: timestamp
+  -updated_at: timestamp
+}
+
+class Lesson {
+  -lesson_id: int
+  -schedule_id: int
+  -module_id: int
+  -room_id: int
+  -trainer_id: int
+  -lesson_date: date
+  -start_time: time
+  -end_time: time
+  -day_of_week: enum(monday,tuesday,wednesday,thursday,friday,saturday,sunday)
+  -created_at: timestamp
+  -updated_at: timestamp
+}
+
+class Module {
+  -module_id: int
+  -module_name: string
+  -module_code: string
+  -created_at: timestamp
+  -updated_at: timestamp
+}
+
+class Room {
+  -room_id: int
+  -room_name: string
+  -capacity: int
+  -created_at: timestamp
+  -updated_at: timestamp
+}
+
+class Trainer {
+  -trainer_id: int
+  -trainer_name: string
+  -created_at: timestamp
+  -updated_at: timestamp
+}
+
+' Relationships with 0, 1, * notation
+Group "1" -- "0..*" Schedule 
+Schedule "1" -- "0..*" Lesson
+Module "1" -- "0..*" Lesson
+Room "1" -- "0..*" Lesson 
+Trainer "1" -- "0..*" Lesson
+
+@enduml
